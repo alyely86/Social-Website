@@ -133,3 +133,11 @@ LOGOUT_URL = 'logout'
 
 # email
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+
+# authentication_backends
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'account.authentication.EmailAuthBackend',
+]
